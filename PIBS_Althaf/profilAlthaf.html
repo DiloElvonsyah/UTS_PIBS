@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Althaffayiz Syafiq</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="Foto Althaf.jpg" alt="Foto Diri" class="profile-pic">
+    <h1>PROFIL ALTHAFFAYIZ SYAFIQ</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showContent('biodata')">Biodata</a></li>
+      <li><a href="#" onclick="showContent('pendidikan')">Pendidikan</a></li>
+      <li><a href="#" onclick="showContent('pengalaman')">Pengalaman</a></li>
+      <li><a href="#" onclick="showContent('keahlian')">Keahlian</a></li>
+      <li><a href="#" onclick="showContent('publikasi')">Publikasi</a></li>
+    </ul>
+  </nav>
+
+  <section id="content">
+    <div id="biodata">
+      <h2>Biodata</h2>
+      <p><strong>NIM:</strong> 2023081024</p>
+      <p><strong>Nama:</strong> Althaffayiz Syafiq</p>
+      <p><strong>Agama:</strong> Islam</p>
+      <p><strong>Tanggal Lahir:</strong> 29 Desember 2004</p>
+      <p><strong>Tempat Lahir:</strong> Jakarta</p>
+    </div>
+    
+    <div id="pendidikan" class="hidden">
+      <h2>Pendidikan</h2>
+      <ul>
+        <li>TK Islam Ar-Ruhama, Tahun 2011</li>
+        <li>SD Islam Amalina, Tahun 2017</li>
+        <li>SMP Islam Amalina, Tahun 2020</li>
+        <li>SMA Negeri 5 Tangerang Selatan, Tahun 2023</li>
+      </ul>
+    </div>
+
+    <div id="pengalaman" class="hidden">
+      <h2>Pengalaman</h2>
+      <p>Pengalaman belum tersedia.</p>
+    </div>
+
+    <div id="keahlian" class="hidden">
+      <h2>Keahlian</h2>
+      <p>Keahlian belum tersedia.</p>
+    </div>
+
+    <div id="publikasi" class="hidden">
+      <h2>Publikasi</h2>
+      <p>Publikasi belum tersedia.</p>
+    </div>
+  </section>
+
+  <aside>
+    <h2>Hobi</h2>
+    <ul>
+      <li>Bulutangkis</li>
+      <li>Bola</li>
+      <li>Pemrograman</li>
+    </ul>
+  </aside>
+
+  <footer>
+    <div class="social">
+      <p>Instagram: @AeroSwift29</p>
+      <p>Discord: aeroswift</p>
+    </div>
+    <p class="center-text">&copy; 2020. All Rights Reserved</p>
+    <div class="web-info">
+      <p><strong>WEB PIBS</strong><br><small>Dibuat untuk memenuhi Ujian Tengah Semester Matakuliah PIBS</small></p>
+    </div>
+  </footer>
+
+  <script>
+    function showContent(id) {
+      const sections = document.querySelectorAll('section > div');
+      sections.forEach(section => section.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
